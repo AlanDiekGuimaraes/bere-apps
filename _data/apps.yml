@@ -1,0 +1,27 @@
+# One entry per app. The shared texts in _includes/ read these fields, so a new game only needs
+# an entry here plus a copy of the novo-jogo/ folder (see README.md).
+#
+#   name        name used inside the texts
+#   store_name  name on the Play Store
+#   package     Android package
+#   updated     date of the last change to this app's texts (YYYY-MM-DD)
+#   stored      what stays on the device, in each language
+#   cloud_save  true if the player can turn on saving the high score in Google Play Games
+#   donations   true if the app has the optional Google Play donation
+#   content     sentence about the app's own content, in each language
+
+pocket-brick:
+  name: Pocket Brick
+  store_name: "Pocket Brick: Jogos Retrô"
+  package: com.pocketbrick.game
+  updated: 2026-10-03
+  cloud_save: true
+  donations: true
+  stored:
+    pt: o recorde de cada jogo, a partida em andamento e suas escolhas em Opções
+    en: the high score of each game, the game in progress and your choices in Options
+    es: el récord de cada juego, la partida en curso y tus elecciones en Opciones
+  content:
+    pt: Os jogos, desenhos e sons do Pocket Brick são originais.
+    en: Pocket Brick's games, drawings and sounds are original.
+    es: Los juegos, dibujos y sonidos de Pocket Brick son originales.

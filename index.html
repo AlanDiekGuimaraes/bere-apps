@@ -1,0 +1,26 @@
+---
+lang: pt
+---
+{%- assign t = site.data.i18n.pt -%}
+<header class="doc-head">
+  <p class="app">{{ site.title }}</p>
+  <h1>{{ t.home_title }}</h1>
+  <p class="updated">{{ t.home_text }}</p>
+</header>
+{%- for entry in site.data.apps %}
+{%- assign id = entry[0] %}
+{%- assign app = entry[1] %}
+<section class="app-card">
+  <h2>{{ app.store_name }}</h2>
+  <table>
+    {%- for l in site.data.i18n.languages %}
+    {%- assign lt = site.data.i18n[l] %}
+    <tr>
+      <th lang="{{ lt.html_lang }}">{{ lt.name }}</th>
+      <td><a href="{{ '/' | append: id | append: '/' | append: site.data.i18n.paths.privacy[l] | append: '/' | relative_url }}" lang="{{ lt.html_lang }}">{{ lt.privacy }}</a></td>
+      <td><a href="{{ '/' | append: id | append: '/' | append: site.data.i18n.paths.terms[l] | append: '/' | relative_url }}" lang="{{ lt.html_lang }}">{{ lt.terms }}</a></td>
+    </tr>
+    {%- endfor %}
+  </table>
+</section>
+{%- endfor %}

@@ -1,0 +1,22 @@
+<p>By installing or using <strong>{{ app.name }}</strong>, you agree to these terms. The app is published by {{ site.developer }}.</p>
+
+<h2>Free to use</h2>
+<p>{{ app.name }} is free for personal use, has no ads and comes with everything unlocked.{% if app.donations %} The only in-app purchase is the optional donation through Google Play, which unlocks nothing and is not refunded by the app; refund requests follow Google Play's rules.{% endif %}</p>
+
+<h2>Content</h2>
+<p>{{ app.content.en }} The app's name, look, texts and code belong to the developer. Copying, modifying, selling or redistributing the app or parts of it without permission is not allowed.</p>
+
+<h2>How the app is provided</h2>
+<p>The app is provided as is, with no guarantee of uninterrupted or error-free operation. To the extent permitted by law, the developer is not liable for losses arising from using the app, such as losing high scores when clearing the device's data.</p>
+
+<h2>Google services</h2>
+<p>Features that depend on Google Play{% if app.cloud_save %}, such as the high score in your Google account{% endif %}{% if app.donations %}{% if app.cloud_save %} and{% else %}, such as{% endif %} donations{% endif %}, are also subject to the <a href="https://policies.google.com/terms?hl=en">Google Terms of Service</a>.</p>
+
+<h2>Updates</h2>
+<p>We may update the app and these terms to improve the experience. The current version is always on this page, with the date at the top.</p>
+
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of Brazil, without prejudice to the rights your country's law grants you as a consumer.</p>
+
+<h2>Contact</h2>
+<p>Questions about these terms: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>

@@ -1,0 +1,37 @@
+<p>Esta política explica cómo <strong>{{ app.name }}</strong> trata la información. La app es publicada por {{ site.developer }} en Google Play.</p>
+
+<h2>Resumen</h2>
+<ul>
+  <li>No tiene anuncios, no pide registro y no recopila datos personales.</li>
+  <li>No usamos rastreo, análisis de uso ni identificadores de publicidad.</li>
+  <li>No vendemos ni compartimos información con nadie.</li>
+</ul>
+
+<h2>Lo que se guarda en el dispositivo</h2>
+<p>Solo tu dispositivo guarda {{ app.stored.es }}. Esta información no se nos envía. Para borrarla, elimina los datos de la app en los ajustes de Android o desinstala la app.</p>
+<p>Si la copia de seguridad de Android está activada, el propio sistema puede guardar una copia de estos datos en tu cuenta de Google, según los ajustes de tu dispositivo.</p>
+
+{%- if app.cloud_save %}
+<h2>Récord en tu cuenta de Google (opcional)</h2>
+<p>Si activas guardar en tu cuenta de Google, solo el récord se guarda en los juegos guardados de Google Play Juegos, en tu propia cuenta. Este servicio lo ofrece y lo trata Google, según la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>. Nosotros no recibimos estos datos. Puedes desactivar la opción cuando quieras y borrar los datos del juego en la app Google Play Juegos.</p>
+{%- endif %}
+
+{%- if app.donations %}
+<h2>Donaciones</h2>
+<p>La donación es opcional, no desbloquea nada en la app y se paga por Google Play. Los datos de pago (como tu tarjeta u otro medio de pago) quedan solo con Google, según la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>. La app solo recibe la confirmación de que la compra se completó, sin datos personales.</p>
+{%- endif %}
+
+<h2>Permisos e internet</h2>
+<p>{{ app.name }} no pide acceso a la cámara, fotos, contactos, ubicación, micrófono ni notificaciones. La vibración usa el recurso del propio sistema.{% if app.cloud_save or app.donations %} Internet solo lo usan los servicios de Google mencionados arriba; sin ellos, la app funciona sin conexión.{% else %} La app funciona sin conexión.{% endif %}</p>
+
+<h2>Sugerencias por correo</h2>
+<p>Al enviar una sugerencia, el mensaje se abre en tu app de correo y solo nos llega si decides enviarlo. En ese caso recibimos tu dirección de correo y el mensaje, usados solo para responder. Puedes pedir que borremos esa conversación cuando quieras.</p>
+
+<h2>Niños</h2>
+<p>La app no recopila datos personales de nadie, incluidos los niños.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia, la nueva versión se publicará en esta página con la fecha de actualización arriba.</p>
+
+<h2>Contacto</h2>
+<p>Preguntas sobre privacidad: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>

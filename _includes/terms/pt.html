@@ -1,0 +1,22 @@
+<p>Ao instalar ou usar o <strong>{{ app.name }}</strong>, você concorda com estes termos. O app é publicado por {{ site.developer }}.</p>
+
+<h2>Uso livre e gratuito</h2>
+<p>O {{ app.name }} é gratuito para uso pessoal, não tem anúncios e vem com tudo liberado.{% if app.donations %} A única compra no app é a doação opcional pela Google Play, que não libera nada e não é reembolsável pelo app; pedidos de reembolso seguem as regras da Google Play.{% endif %}</p>
+
+<h2>Conteúdo</h2>
+<p>{{ app.content.pt }} O nome, o visual, os textos e o código do app pertencem ao desenvolvedor. Não é permitido copiar, modificar, vender ou redistribuir o app ou partes dele sem autorização.</p>
+
+<h2>Como o app é oferecido</h2>
+<p>O app é oferecido como está, sem garantias de funcionamento contínuo ou livre de erros. Na medida permitida pela lei, o desenvolvedor não se responsabiliza por perdas decorrentes do uso do app, como a perda de recordes ao limpar os dados do aparelho.</p>
+
+<h2>Serviços do Google</h2>
+<p>Recursos que dependem da Google Play{% if app.cloud_save %}, como o recorde na conta Google{% endif %}{% if app.donations %}{% if app.cloud_save %} e{% else %}, como{% endif %} as doações{% endif %}, também seguem os <a href="https://policies.google.com/terms?hl=pt-BR">Termos de Serviço do Google</a>.</p>
+
+<h2>Atualizações</h2>
+<p>Podemos atualizar o app e estes termos para melhorar a experiência. A versão atual fica sempre nesta página, com a data no topo.</p>
+
+<h2>Lei aplicável</h2>
+<p>Estes termos seguem as leis do Brasil, sem prejuízo dos direitos que a lei do seu país garante a você como consumidor.</p>
+
+<h2>Contato</h2>
+<p>Dúvidas sobre estes termos: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>

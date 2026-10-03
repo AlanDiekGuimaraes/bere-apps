@@ -1,0 +1,22 @@
+<p>Al instalar o usar <strong>{{ app.name }}</strong>, aceptas estos términos. La app es publicada por {{ site.developer }}.</p>
+
+<h2>Uso libre y gratuito</h2>
+<p>{{ app.name }} es gratuito para uso personal, no tiene anuncios y viene con todo desbloqueado.{% if app.donations %} La única compra en la app es la donación opcional por Google Play, que no desbloquea nada y no es reembolsada por la app; las solicitudes de reembolso siguen las reglas de Google Play.{% endif %}</p>
+
+<h2>Contenido</h2>
+<p>{{ app.content.es }} El nombre, el aspecto, los textos y el código de la app pertenecen al desarrollador. No se permite copiar, modificar, vender ni redistribuir la app o partes de ella sin autorización.</p>
+
+<h2>Cómo se ofrece la app</h2>
+<p>La app se ofrece tal cual, sin garantía de funcionamiento continuo o libre de errores. En la medida que lo permita la ley, el desarrollador no se responsabiliza por pérdidas derivadas del uso de la app, como perder récords al borrar los datos del dispositivo.</p>
+
+<h2>Servicios de Google</h2>
+<p>Las funciones que dependen de Google Play{% if app.cloud_save %}, como el récord en tu cuenta de Google{% endif %}{% if app.donations %}{% if app.cloud_save %} y{% else %}, como{% endif %} las donaciones{% endif %}, también se rigen por los <a href="https://policies.google.com/terms?hl=es">Términos del Servicio de Google</a>.</p>
+
+<h2>Actualizaciones</h2>
+<p>Podemos actualizar la app y estos términos para mejorar la experiencia. La versión actual siempre está en esta página, con la fecha arriba.</p>
+
+<h2>Ley aplicable</h2>
+<p>Estos términos se rigen por las leyes de Brasil, sin perjuicio de los derechos que la ley de tu país te garantiza como consumidor.</p>
+
+<h2>Contacto</h2>
+<p>Preguntas sobre estos términos: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>

@@ -1,0 +1,27 @@
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.pt -%}
+<!DOCTYPE html>
+<html lang="{{ t.html_lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <main class="page">
+    {%- if page.app and page.doc %}
+    <nav class="languages" aria-label="Idioma / Language / Idioma">
+      {%- for l in site.data.i18n.languages %}
+      {%- assign path = site.data.i18n.paths[page.doc][l] %}
+      <a href="{{ '/' | append: page.app | append: '/' | append: path | append: '/' | relative_url }}" lang="{{ site.data.i18n[l].html_lang }}"{% if l == page.lang %} aria-current="page"{% endif %}>{{ site.data.i18n[l].name }}</a>
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+    {{ content }}
+    <footer>
+      <p>{{ t.contact }}: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a></p>
+      <p><a href="{{ '/' | relative_url }}">{{ site.title }}</a> · {{ site.developer }}</p>
+    </footer>
+  </main>
+</body>
+</html>

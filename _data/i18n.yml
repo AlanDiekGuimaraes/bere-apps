@@ -1,0 +1,44 @@
+# Interface text and page addresses for each language. Every app uses the same addresses:
+#   /<app>/privacidade/  /<app>/en/privacy/  /<app>/es/privacidad/
+#   /<app>/termos/       /<app>/en/terms/    /<app>/es/terminos/
+languages: [pt, en, es]
+
+paths:
+  privacy: { pt: privacidade, en: en/privacy, es: es/privacidad }
+  terms: { pt: termos, en: en/terms, es: es/terminos }
+
+pt:
+  html_lang: pt-BR
+  name: Português
+  privacy: Política de Privacidade
+  terms: Termos de Uso
+  updated: Última atualização
+  contact: Contato
+  home_title: Apps de Alan Diek Guimarães
+  home_text: Jogos gratuitos e sem anúncios. Aqui ficam a política de privacidade e os termos de uso de cada app.
+  months: [janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro]
+  date: "{d} de {m} de {y}"
+
+en:
+  html_lang: en
+  name: English
+  privacy: Privacy Policy
+  terms: Terms of Use
+  updated: Last updated
+  contact: Contact
+  home_title: Apps by Alan Diek Guimarães
+  home_text: Free games with no ads. Here you'll find the privacy policy and terms of use of each app.
+  months: [January, February, March, April, May, June, July, August, September, October, November, December]
+  date: "{m} {d}, {y}"
+
+es:
+  html_lang: es
+  name: Español
+  privacy: Política de Privacidad
+  terms: Términos de Uso
+  updated: Última actualización
+  contact: Contacto
+  home_title: Apps de Alan Diek Guimarães
+  home_text: Juegos gratuitos y sin anuncios. Aquí están la política de privacidad y los términos de uso de cada app.
+  months: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
+  date: "{d} de {m} de {y}"

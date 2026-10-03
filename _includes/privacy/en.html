@@ -1,0 +1,37 @@
+<p>This policy explains how <strong>{{ app.name }}</strong> handles information. The app is published by {{ site.developer }} on Google Play.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>No ads, no sign-up and no personal data collected.</li>
+  <li>We do not use tracking, usage analytics or advertising identifiers.</li>
+  <li>We do not sell or share information with anyone.</li>
+</ul>
+
+<h2>What is stored on the device</h2>
+<p>Only your device keeps {{ app.stored.en }}. This information is not sent to us. To erase it, clear the app's data in Android settings or uninstall the app.</p>
+<p>If Android backup is on, the system itself may keep a copy of this data in your Google account, according to your device settings.</p>
+
+{%- if app.cloud_save %}
+<h2>High score in your Google account (optional)</h2>
+<p>If you turn on saving to your Google account, only the high score is saved in Google Play Games saved games, in your own account. This service is provided and handled by Google, under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. We do not receive this data. You can turn the option off at any time and delete the game's data in the Google Play Games app.</p>
+{%- endif %}
+
+{%- if app.donations %}
+<h2>Donations</h2>
+<p>Donating is optional, unlocks nothing in the app and is paid through Google Play. Payment details (such as your card or other payment method) stay with Google, under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. The app only receives confirmation that the purchase was completed, with no personal data.</p>
+{%- endif %}
+
+<h2>Permissions and internet</h2>
+<p>{{ app.name }} does not ask for access to your camera, photos, contacts, location, microphone or notifications. Vibration uses the system's built-in feedback.{% if app.cloud_save or app.donations %} The internet is used only by the Google services listed above; without them, the app works offline.{% else %} The app works offline.{% endif %}</p>
+
+<h2>Email suggestions</h2>
+<p>When you send a suggestion, the message opens in your email app and only reaches us if you decide to send it. In that case we receive your email address and the message, used only to reply. You can ask us to delete that conversation at any time.</p>
+
+<h2>Children</h2>
+<p>The app does not collect personal data from anyone, including children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be published on this page with the update date at the top.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>

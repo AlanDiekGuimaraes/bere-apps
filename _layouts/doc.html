@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- assign app = site.data.apps[page.app] -%}
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign month = app.updated | date: "%-m" | minus: 1 -%}
+{%- assign day = app.updated | date: "%-d" -%}
+{%- assign year = app.updated | date: "%Y" -%}
+{%- assign updated = t.date | replace: "{d}", day | replace: "{m}", t.months[month] | replace: "{y}", year -%}
+<header class="doc-head">
+  <p class="app">{{ app.store_name }}</p>
+  <h1>{{ t[page.doc] }}</h1>
+  <p class="updated">{{ t.updated }}: {{ updated }}</p>
+</header>
+<article class="doc">
+  {%- include {{ page.doc }}/{{ page.lang }}.html -%}
+</article>

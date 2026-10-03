@@ -1,0 +1,12 @@
+title: Bere Apps
+developer: Alan Diek Guimarães
+contact: alandiekguimaraes@gmail.com
+baseurl: /bere-apps
+url: https://alandiekguimaraes.github.io
+markdown: kramdown
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+exclude:
+  - README.md
+  - novo-jogo
