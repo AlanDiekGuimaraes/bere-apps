@@ -25,3 +25,19 @@ pocket-brick:
     pt: Os jogos, desenhos e sons do Pocket Brick são originais.
     en: Pocket Brick's games, drawings and sounds are original.
     es: Los juegos, dibujos y sonidos de Pocket Brick son originales.
+
+grid-puzzle:
+  name: Pocket Brick Grid
+  store_name: "Pocket Brick: Grid Puzzle"
+  package: com.pocketbrick.grid
+  updated: 2026-10-04
+  cloud_save: false
+  donations: true
+  stored:
+    pt: o recorde, o maior combo, o número de partidas, a partida em andamento e suas escolhas em Opções
+    en: the best score, the best combo, the number of games played, the game in progress and your choices in Options
+    es: el récord, el mayor combo, el número de partidas, la partida en curso y tus elecciones en Opciones
+  content:
+    pt: O jogo, os desenhos e os sons do Pocket Brick Grid são originais.
+    en: Pocket Brick Grid's game, drawings and sounds are original.
+    es: El juego, los dibujos y los sonidos de Pocket Brick Grid son originales.
