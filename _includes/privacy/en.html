@@ -21,8 +21,13 @@
 <p>Donating is optional, unlocks nothing in the app and is paid through Google Play. Payment details (such as your card or other payment method) stay with Google, under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. The app only receives confirmation that the purchase was completed, with no personal data.</p>
 {%- endif %}
 
+{%- if app.reminders %}
+<h2>Come-back reminders (optional)</h2>
+<p>If you accept them, the app shows at most {{ app.reminders.count }} reminders when you go a few days without playing ({{ app.reminders.days.en }}), in the early evening, and then stays silent until you play again. Reminders are scheduled and created on the device itself, use no internet, server or third-party service, and their text only uses data already kept on the device (such as your best score). For this the app keeps the day of your last move. You can turn reminders off in Options or in Android's notification settings.</p>
+{%- endif %}
+
 <h2>Permissions and internet</h2>
-<p>{{ app.name }} does not ask for access to your camera, photos, contacts, location, microphone or notifications. Vibration uses the system's built-in feedback.{% if app.cloud_save or app.donations %} The internet is used only by the Google services listed above; without them, the app works offline.{% else %} The app works offline.{% endif %}</p>
+<p>{{ app.name }} does not ask for access to your camera, photos, contacts, location or microphone.{% if app.reminders %} The notification permission is only requested if you accept the reminders.{% else %} It does not ask for the notification permission either.{% endif %} Vibration uses the system's built-in feedback.{% if app.cloud_save or app.donations %} The internet is used only by the Google services listed above; without them, the app works offline.{% else %} The app works offline.{% endif %}</p>
 
 <h2>Email suggestions</h2>
 <p>When you send a suggestion, the message opens in your email app and only reaches us if you decide to send it. In that case we receive your email address and the message, used only to reply. You can ask us to delete that conversation at any time.</p>

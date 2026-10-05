@@ -21,8 +21,13 @@
 <p>La donación es opcional, no desbloquea nada en la app y se paga por Google Play. Los datos de pago (como tu tarjeta u otro medio de pago) quedan solo con Google, según la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>. La app solo recibe la confirmación de que la compra se completó, sin datos personales.</p>
 {%- endif %}
 
+{%- if app.reminders %}
+<h2>Recordatorios para volver a jugar (opcional)</h2>
+<p>Si los aceptas, la app muestra como máximo {{ app.reminders.count }} recordatorios cuando pasas algunos días sin jugar ({{ app.reminders.days.es }}), al comienzo de la noche, y después queda en silencio hasta que vuelvas a jugar. Los recordatorios se programan y se crean en el propio dispositivo, no usan internet, servidores ni servicios de terceros, y su texto solo usa datos que ya quedan en el dispositivo (como tu récord). Para ello la app guarda el día de tu última jugada. Puedes desactivarlos en Opciones o en los ajustes de notificaciones de Android.</p>
+{%- endif %}
+
 <h2>Permisos e internet</h2>
-<p>{{ app.name }} no pide acceso a la cámara, fotos, contactos, ubicación, micrófono ni notificaciones. La vibración usa el recurso del propio sistema.{% if app.cloud_save or app.donations %} Internet solo lo usan los servicios de Google mencionados arriba; sin ellos, la app funciona sin conexión.{% else %} La app funciona sin conexión.{% endif %}</p>
+<p>{{ app.name }} no pide acceso a la cámara, fotos, contactos, ubicación ni micrófono.{% if app.reminders %} El permiso de notificaciones solo se pide si aceptas los recordatorios.{% else %} Tampoco pide permiso de notificaciones.{% endif %} La vibración usa el recurso del propio sistema.{% if app.cloud_save or app.donations %} Internet solo lo usan los servicios de Google mencionados arriba; sin ellos, la app funciona sin conexión.{% else %} La app funciona sin conexión.{% endif %}</p>
 
 <h2>Sugerencias por correo</h2>
 <p>Al enviar una sugerencia, el mensaje se abre en tu app de correo y solo nos llega si decides enviarlo. En ese caso recibimos tu dirección de correo y el mensaje, usados solo para responder. Puedes pedir que borremos esa conversación cuando quieras.</p>

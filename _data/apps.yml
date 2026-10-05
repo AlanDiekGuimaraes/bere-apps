@@ -8,6 +8,7 @@
 #   stored      what stays on the device, in each language
 #   cloud_save  true if the player can turn on saving the high score in Google Play Games
 #   donations   true if the app has the optional Google Play donation
+#   reminders   only if the app has optional local "come back" reminders: count and days in each language
 #   content     sentence about the app's own content, in each language
 
 pocket-brick:
@@ -30,14 +31,20 @@ grid-puzzle:
   name: "Pocket Brick: Grid Puzzle"
   store_name: "Pocket Brick: Grid Puzzle"
   package: com.pocketbrick.grid
-  updated: 2026-10-04
+  updated: 2026-10-05
   cloud_save: false
   donations: true
+  reminders:
+    count: 3
+    days:
+      pt: depois de 2, 4 e 7 dias sem jogar
+      en: after 2, 4 and 7 days without playing
+      es: tras 2, 4 y 7 días sin jugar
   stored:
-    pt: o recorde, o maior combo, o número de partidas, a partida em andamento e suas escolhas em Opções
-    en: the best score, the best combo, the number of games played, the game in progress and your choices in Options
-    es: el récord, el mayor combo, el número de partidas, la partida en curso y tus elecciones en Opciones
+    pt: o recorde, o maior combo, o número de partidas, a partida em andamento, o dia da última jogada e suas escolhas em Opções
+    en: the best score, the best combo, the number of games played, the game in progress, the day of your last move and your choices in Options
+    es: el récord, el mayor combo, el número de partidas, la partida en curso, el día de tu última jugada y tus elecciones en Opciones
   content:
-    pt: O jogo, os desenhos e os sons do Pocket Brick Grid são originais.
-    en: Pocket Brick Grid's game, drawings and sounds are original.
-    es: El juego, los dibujos y los sonidos de Pocket Brick Grid son originales.
+    pt: "O jogo, os desenhos e os sons do Pocket Brick: Grid Puzzle são originais."
+    en: "Pocket Brick: Grid Puzzle's game, drawings and sounds are original."
+    es: "El juego, los dibujos y los sonidos de Pocket Brick: Grid Puzzle son originales."

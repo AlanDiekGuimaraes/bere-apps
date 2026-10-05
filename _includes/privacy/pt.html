@@ -21,8 +21,13 @@
 <p>A doação é opcional, não libera nada no app e é paga pela Google Play. Os dados de pagamento (como cartão ou outra forma de pagamento) ficam só com o Google, conforme a <a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a>. O app recebe apenas a confirmação de que a compra foi concluída, sem dados pessoais.</p>
 {%- endif %}
 
+{%- if app.reminders %}
+<h2>Lembretes para voltar a jogar (opcional)</h2>
+<p>Se você aceitar, o app mostra no máximo {{ app.reminders.count }} lembretes quando você fica alguns dias sem jogar ({{ app.reminders.days.pt }}), no começo da noite, e depois fica em silêncio até você jogar de novo. Os lembretes são agendados e criados no próprio aparelho, não usam internet, servidor nem serviços de terceiros, e o texto usa só dados que já ficam no aparelho (como o seu recorde). Para isso o app guarda o dia da última jogada. Você pode desligar os lembretes em Opções ou nas configurações de notificação do Android.</p>
+{%- endif %}
+
 <h2>Permissões e internet</h2>
-<p>O {{ app.name }} não pede acesso a câmera, fotos, contatos, localização, microfone nem notificações. A vibração usa o recurso do próprio sistema.{% if app.cloud_save or app.donations %} A internet é usada apenas pelos serviços do Google citados acima; sem eles, o app funciona sem conexão.{% else %} O app funciona sem conexão.{% endif %}</p>
+<p>O {{ app.name }} não pede acesso a câmera, fotos, contatos, localização nem microfone.{% if app.reminders %} A permissão de notificações só é pedida se você aceitar os lembretes.{% else %} Também não pede permissão de notificações.{% endif %} A vibração usa o recurso do próprio sistema.{% if app.cloud_save or app.donations %} A internet é usada apenas pelos serviços do Google citados acima; sem eles, o app funciona sem conexão.{% else %} O app funciona sem conexão.{% endif %}</p>
 
 <h2>Sugestões por e-mail</h2>
 <p>Ao enviar uma sugestão, a mensagem abre no seu app de e-mail e só chega até nós se você decidir enviar. Nesse caso recebemos seu endereço de e-mail e a mensagem, usados apenas para responder. Você pode pedir a exclusão dessa conversa a qualquer momento.</p>
