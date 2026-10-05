@@ -27,7 +27,7 @@ pocket-brick:
     es: Los juegos, dibujos y sonidos de Pocket Brick son originales.
 
 grid-puzzle:
-  name: Pocket Brick Grid
+  name: "Pocket Brick: Grid Puzzle"
   store_name: "Pocket Brick: Grid Puzzle"
   package: com.pocketbrick.grid
   updated: 2026-10-04
