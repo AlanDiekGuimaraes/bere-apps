@@ -33,9 +33,10 @@ grid-puzzle:
   name: "Pocket Brick: Grid Puzzle"
   store_name: "Pocket Brick: Grid Puzzle"
   package: com.pocketbrick.grid
-  updated: 2026-10-11
+  updated: 2026-10-13
   cloud_save: false
   donations: true
+  donor_seals: true
   reminders:
     count: 3
     days:
@@ -43,9 +44,9 @@ grid-puzzle:
       en: after 2, 4 and 7 days without playing
       es: tras 2, 4 y 7 días sin jugar
   stored:
-    pt: o recorde, o maior combo, o número de partidas, as estrelas das fases, a partida e a fase em andamento, o dia da última jogada e suas escolhas em Opções
-    en: the best score, the best combo, the number of games played, the level stars, the game and level in progress, the day of your last move and your choices in Options
-    es: el récord, el mayor combo, el número de partidas, las estrellas de los niveles, la partida y el nivel en curso, el día de tu última jugada y tus elecciones en Opciones
+    pt: o recorde, o maior combo, o número de partidas, as estrelas das fases, as gemas ganhas jogando (com o registro de ganhos e gastos, que não têm valor em dinheiro e não são vendidas), a partida e a fase em andamento, o dia da última jogada e suas escolhas em Opções
+    en: the best score, the best combo, the number of games played, the level stars, the gems earned by playing (with the record of gains and spends; gems have no money value and are never sold), the game and level in progress, the day of your last move and your choices in Options
+    es: el récord, el mayor combo, el número de partidas, las estrellas de los niveles, las gemas ganadas jugando (con el registro de ganancias y gastos; no tienen valor en dinero y no se venden), la partida y el nivel en curso, el día de tu última jugada y tus elecciones en Opciones
   content:
     pt: "O jogo, os desenhos e os sons do Pocket Brick: Grid Puzzle são originais."
     en: "Pocket Brick: Grid Puzzle's game, drawings and sounds are original."
