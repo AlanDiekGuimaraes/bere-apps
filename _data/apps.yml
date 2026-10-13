@@ -8,6 +8,8 @@
 #   stored      what stays on the device, in each language
 #   cloud_save  true if the player can turn on saving the high score in Google Play Games
 #   donations   true if the app has the optional Google Play donation
+#   donor_seals true if donations earn a thank-you seal (the app keeps the sum donated on the device);
+#               turn on only when the version with seals is live on the Play Store
 #   reminders   only if the app has optional local "come back" reminders: count and days in each language
 #   content     sentence about the app's own content, in each language
 

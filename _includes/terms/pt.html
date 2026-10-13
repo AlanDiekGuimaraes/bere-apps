@@ -1,7 +1,7 @@
 <p>Ao instalar ou usar o <strong>{{ app.name }}</strong>, você concorda com estes termos. O app é publicado por {{ site.developer }}.</p>
 
 <h2>Uso livre e gratuito</h2>
-<p>O {{ app.name }} é gratuito para uso pessoal, não tem anúncios e vem com tudo liberado.{% if app.donations %} A única compra no app é a doação opcional pela Google Play, que não libera nada e não é reembolsável pelo app; pedidos de reembolso seguem as regras da Google Play.{% endif %}</p>
+<p>O {{ app.name }} é gratuito para uso pessoal, não tem anúncios e vem com tudo liberado.{% if app.donations %} A única compra no app é a doação opcional pela Google Play, que não libera nada{% if app.donor_seals %} do jogo além de um selo de agradecimento{% endif %} e não é reembolsável pelo app; pedidos de reembolso seguem as regras da Google Play.{% endif %}</p>
 
 <h2>Conteúdo</h2>
 <p>{{ app.content.pt }} O nome, o visual, os textos e o código do app pertencem ao desenvolvedor. Não é permitido copiar, modificar, vender ou redistribuir o app ou partes dele sem autorização.</p>

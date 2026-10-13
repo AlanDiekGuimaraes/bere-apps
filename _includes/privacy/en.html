@@ -18,7 +18,7 @@
 
 {%- if app.donations %}
 <h2>Donations</h2>
-<p>Donating is optional, unlocks nothing in the app and is paid through Google Play. Payment details (such as your card or other payment method) stay with Google, under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. The app only receives confirmation that the purchase was completed, with no personal data.</p>
+<p>Donating is optional, {% if app.donor_seals %}unlocks nothing in the game (only a thank-you seal){% else %}unlocks nothing in the app{% endif %} and is paid through Google Play. Payment details (such as your card or other payment method) stay with Google, under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. The app only receives confirmation that the purchase was completed, with no personal data.{% if app.donor_seals %} To show the seal, the app keeps on the device only the sum of the amounts donated, along with the data listed above (and in the Android backup, if it is on).{% endif %}</p>
 {%- endif %}
 
 {%- if app.reminders %}

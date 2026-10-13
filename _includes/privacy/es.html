@@ -18,7 +18,7 @@
 
 {%- if app.donations %}
 <h2>Donaciones</h2>
-<p>La donación es opcional, no desbloquea nada en la app y se paga por Google Play. Los datos de pago (como tu tarjeta u otro medio de pago) quedan solo con Google, según la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>. La app solo recibe la confirmación de que la compra se completó, sin datos personales.</p>
+<p>La donación es opcional, {% if app.donor_seals %}no desbloquea nada del juego (solo un sello de agradecimiento){% else %}no desbloquea nada en la app{% endif %} y se paga por Google Play. Los datos de pago (como tu tarjeta u otro medio de pago) quedan solo con Google, según la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>. La app solo recibe la confirmación de que la compra se completó, sin datos personales.{% if app.donor_seals %} Para mostrar el sello, la app guarda en el dispositivo solo la suma de los montos donados, junto con los datos citados arriba (y en la copia de seguridad de Android, si está activada).{% endif %}</p>
 {%- endif %}
 
 {%- if app.reminders %}
