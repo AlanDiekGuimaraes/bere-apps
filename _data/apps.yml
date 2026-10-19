@@ -56,10 +56,11 @@ mente-mirim:
   name: Mente Mirim
   store_name: "Mente Mirim: Palavras Cruzadas & Jogos Infantis"
   package: com.bere.mentemirim
-  updated: 2026-10-18
+  updated: 2026-10-19
   cloud_save: false
   donations: true
   donor_seals: true
+  currency_packs: true
   reminders:
     count: 3
     days:
@@ -67,9 +68,9 @@ mente-mirim:
       en: after 2, 4 and 7 days without playing
       es: tras 2, 4 y 7 días sin jugar
   stored:
-    pt: o progresso das fases (estrelas), as moedas e os diamantes (sem valor em dinheiro e sem venda), o álbum de selos, o dia da última jogada, os lembretes locais (se ligados), o idioma, o som e o total doado
-    en: level progress (stars), coins and diamonds (no money value and never sold), the stamp album, the day of the last play, local reminders (if enabled), language, sound and the donated total
-    es: el progreso de las fases (estrellas), las monedas y los diamantes (sin valor en dinero y sin venta), el álbum de sellos, el día de la última partida, los recordatorios locales (si están activos), el idioma, el sonido y el total donado
+    pt: o progresso das fases (estrelas), as moedas e os diamantes (ganhos nas fases ou comprados em pacotes opcionais na loja), o álbum de selos, o dia da última jogada, os lembretes locais (se ligados), o idioma, o som e o total doado
+    en: level progress (stars), coins and diamonds (earned in levels or bought in optional shop packs), the stamp album, the day of the last play, local reminders (if enabled), language, sound and the donated total
+    es: el progreso de las fases (estrellas), las monedas y los diamantes (ganados en las fases o comprados en paquetes opcionales de la tienda), el álbum de sellos, el día de la última partida, los recordatorios locales (si están activos), el idioma, el sonido y el total donado
   content:
     pt: Os jogos, desenhos e sons do Mente Mirim são originais. Feito para famílias, a partir de 4 anos.
     en: Mente Mirim's games, drawings and sounds are original. Made for families, from age 4.

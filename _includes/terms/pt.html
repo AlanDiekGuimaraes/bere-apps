@@ -1,7 +1,7 @@
 <p>Ao instalar ou usar o <strong>{{ app.name }}</strong>, você concorda com estes termos. O app é publicado por {{ site.developer }}.</p>
 
 <h2>Uso livre e gratuito</h2>
-<p>O {{ app.name }} é gratuito para uso pessoal, não tem anúncios e vem com tudo liberado.{% if app.donations %} A única compra no app é a doação opcional pela Google Play, que não libera nada{% if app.donor_seals %} do jogo além de um selo de agradecimento{% endif %} e não é reembolsável pelo app; pedidos de reembolso seguem as regras da Google Play.{% endif %}</p>
+<p>O {{ app.name }} é gratuito para uso pessoal, não tem anúncios e vem com tudo liberado.{% if app.currency_packs %} Compras opcionais pela Google Play: doação (não libera nada{% if app.donor_seals %} do jogo além de um selo de agradecimento{% endif %}) e pacotes de moedas ou diamantes só para a loja do personagem; nenhuma compra é reembolsável pelo app e pedidos de reembolso seguem as regras da Google Play.{% elsif app.donations %} A única compra no app é a doação opcional pela Google Play, que não libera nada{% if app.donor_seals %} do jogo além de um selo de agradecimento{% endif %} e não é reembolsável pelo app; pedidos de reembolso seguem as regras da Google Play.{% endif %}</p>
 
 <h2>Conteúdo</h2>
 <p>{{ app.content.pt }} O nome, o visual, os textos e o código do app pertencem ao desenvolvedor. Não é permitido copiar, modificar, vender ou redistribuir o app ou partes dele sem autorização.</p>
@@ -10,7 +10,7 @@
 <p>O app é oferecido como está, sem garantias de funcionamento contínuo ou livre de erros. Na medida permitida pela lei, o desenvolvedor não se responsabiliza por perdas decorrentes do uso do app, como a perda de recordes ao limpar os dados do aparelho.</p>
 
 <h2>Serviços do Google</h2>
-<p>Recursos que dependem da Google Play{% if app.cloud_save %}, como o recorde na conta Google{% endif %}{% if app.donations %}{% if app.cloud_save %} e{% else %}, como{% endif %} as doações{% endif %}, também seguem os <a href="https://policies.google.com/terms?hl=pt-BR">Termos de Serviço do Google</a>.</p>
+<p>Recursos que dependem da Google Play{% if app.cloud_save %}, como o recorde na conta Google{% endif %}{% if app.donations or app.currency_packs %}{% if app.cloud_save %} e{% else %}, como{% endif %}{% if app.currency_packs %} as compras opcionais{% elsif app.donations %} as doações{% endif %}{% endif %}, também seguem os <a href="https://policies.google.com/terms?hl=pt-BR">Termos de Serviço do Google</a>.</p>
 
 <h2>Atualizações</h2>
 <p>Podemos atualizar o app e estes termos para melhorar a experiência. A versão atual fica sempre nesta página, com a data no topo.</p>
